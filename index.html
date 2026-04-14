@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Timetable Setup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h2>📊 Timetable Setup</h2>
+
+  <!-- INSTITUTION TYPE -->
+  <label>Institution Type</label>
+  <select id="institutionType">
+    <option value="">Select Type</option>
+    <option value="nursery">Nursery</option>
+    <option value="primary">Primary</option>
+    <option value="secondary">Secondary</option>
+    <option value="college">College of Education</option>
+    <option value="polytechnic">Polytechnic</option>
+    <option value="university">University</option>
+  </select>
+
+  <!-- STRUCTURE -->
+  <div id="structureSection"></div>
+
+  <!-- COURSES -->
+  <h3>📘 Courses / Subjects</h3>
+  <div id="courses"></div>
+  <button onclick="addCourse()">+ Add Course</button>
+
+  <!-- STAFF -->
+  <h3>👨‍🏫 Staff</h3>
+  <div id="staff"></div>
+  <button onclick="addStaff()">+ Add Staff</button>
+
+  <!-- ROOMS -->
+  <h3>🏫 Rooms</h3>
+  <div id="rooms"></div>
+  <button onclick="addRoom()">+ Add Room</button>
+
+  <!-- TIME -->
+  <h3>⏰ Time Slots</h3>
+  <div id="times"></div>
+  <button onclick="addTime()">+ Add Time Slot</button>
+
+  <br><br>
+  <button class="generate" onclick="generate()">🚀 Generate Timetable</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
