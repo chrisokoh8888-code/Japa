@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Timetable Master NG</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>📊 Timetable Setup</h1>
+
+  <!-- TYPE -->
+  <label>Institution Type</label>
+  <select id="institutionType">
+    <option value="">Select Type</option>
+    <option value="nursery">Nursery</option>
+    <option value="primary">Primary</option>
+    <option value="secondary">Secondary</option>
+    <option value="college">College of Education</option>
+    <option value="polytechnic">Polytechnic</option>
+    <option value="university">University</option>
+  </select>
+
+  <!-- STRUCTURE -->
+  <div id="structureSection"></div>
+
+  <!-- COURSES -->
+  <h3>📘 Courses</h3>
+  <div id="courses"></div>
+  <button class="add-btn" onclick="addCourse()">+ Add Course</button>
+
+  <!-- STAFF -->
+  <h3>👨‍🏫 Staff</h3>
+  <div id="staff"></div>
+  <button class="add-btn" onclick="addStaff()">+ Add Staff</button>
+
+  <!-- ROOMS -->
+  <h3>🏫 Rooms</h3>
+  <div id="rooms"></div>
+  <button class="add-btn" onclick="addRoom()">+ Add Room</button>
+
+  <!-- TIME -->
+  <h3>⏰ Time Slots</h3>
+  <div id="times"></div>
+  <button class="add-btn" onclick="addTime()">+ Add Time</button>
+
+  <br><br>
+  <button class="generate" onclick="generate()">🚀 Generate Timetable</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
